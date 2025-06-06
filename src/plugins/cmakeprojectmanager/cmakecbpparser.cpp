@@ -38,6 +38,7 @@
 #include <projectexplorer/projectnodes.h>
 
 #include <QLoggingCategory>
+#include <limits>
 
 using namespace ProjectExplorer;
 using namespace Utils;
