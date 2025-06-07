@@ -748,7 +748,7 @@ QList<Abi::OSFlavor> Abi::flavorsForOs(const Abi::OS &o)
 
 Abi Abi::hostAbi()
 {
-    Architecture arch = QTC_CPU; // define set by qmake
+    Architecture arch = Abi::X86Architecture; // TODO doesn't seem to work on Qt 5.15.8: QTC_CPU; // define set by qmake
     OS os = UnknownOS;
     OSFlavor subos = UnknownFlavor;
     BinaryFormat format = UnknownFormat;

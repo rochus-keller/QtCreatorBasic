@@ -22,7 +22,6 @@ SUBDIRS   = \
     autotoolsprojectmanager \
     fakevim \
     emacskeys \
-    designer \
     resourceeditor \
     genericprojectmanager \
     classview \
@@ -35,6 +34,7 @@ SUBDIRS   = \
     beautifier \
     updateinfo
 
+#TODO     designer \
 
 # prefer qmake variable set on command line over env var
 isEmpty(LLVM_INSTALL_DIR):LLVM_INSTALL_DIR=$$(LLVM_INSTALL_DIR)

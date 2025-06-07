@@ -115,6 +115,7 @@
 #include <QTimeLine>
 #include <QTimer>
 #include <QToolBar>
+#include <QPainterPath>
 
 //#define DO_FOO
 

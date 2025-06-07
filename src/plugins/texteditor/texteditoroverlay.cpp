@@ -36,6 +36,7 @@
 #include <QMap>
 #include <QPainter>
 #include <QTextBlock>
+#include <QPainterPath>
 
 using namespace TextEditor;
 using namespace TextEditor::Internal;

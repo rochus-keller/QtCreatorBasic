@@ -51,6 +51,7 @@
 #include <QDebug>
 #include <QSettings>
 
+#include <QAbstractItemView>
 #include <QCheckBox>
 #include <QClipboard>
 #include <QCompleter>

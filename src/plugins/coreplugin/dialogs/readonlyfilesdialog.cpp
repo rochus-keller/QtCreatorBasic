@@ -47,6 +47,7 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include <QRadioButton>
+#include <QButtonGroup>
 
 namespace Core {
 namespace Internal {

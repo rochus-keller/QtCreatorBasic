@@ -55,6 +55,7 @@
 #include <QStyleOption>
 #include <QToolBar>
 #include <QToolButton>
+#include <QPainterPath>
 
 using namespace Utils;
 

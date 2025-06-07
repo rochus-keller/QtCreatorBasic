@@ -407,7 +407,7 @@ void CMakeCbpParser::parseAdd()
         if (macroNameIndex != 1) {
             int assignIndex = compilerOption.indexOf(QLatin1Char('='), macroNameIndex);
             if (assignIndex != -1)
-                compilerOption[assignIndex] = ' ';
+                compilerOption[assignIndex] = QLatin1Char(' ');
             m_buildTarget.defines.append("#define ");
             m_buildTarget.defines.append(compilerOption.mid(macroNameIndex).toUtf8());
             m_buildTarget.defines.append('\n');

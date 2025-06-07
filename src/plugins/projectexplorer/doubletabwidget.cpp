@@ -41,6 +41,7 @@
 #include <QMouseEvent>
 #include <QMenu>
 #include <QToolTip>
+#include <QStyleOption>
 
 #include <QDebug>
 

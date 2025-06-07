@@ -32,3 +32,9 @@ And here comes QtCreator Basic.
 
 
 For more information about the original QtCreator, see README_ORIG.md.
+
+### Update 2025-06-07
+
+The code successfully built on the T480, but it crashed when opening the options dialog (in Core::Internal::VariableChooserPrivate::updateDescription, calling QLabel::setText, evetually in operator==(QString const&, QString const&)).
+Everything looks ok in the debugger; no obvious reason for the crash. It's interesting to note that I compiled some other apps with Qt 5.6.3 x64 on this machine which worked well; this would indicate a QtCreator issue, but the same code compiled and run without a crash on my EliteBook. So I thought that maybe a SIMD issue which was fixed in later Qt versions; so I tried with the Qt 5.15.8 included with Debian bookworm; to make this compile, again many changes were necessary in the QtCreaterBase source code; I even had to disable the designer plugin because none of the Debian packages seem to include the private designer parts required by the plugin. Eventually it compiled, but showed exactly the same issue, and again no obvious reason seen in the debugger. 
+The search continues.
